@@ -15,7 +15,7 @@ pipeline {
         sh 'docker build -t darinpope/java-web-app:latest .'
       }
     }
-    stage('Login') {
+    stage('Any') {
       steps {
         sh 'echo $HEROKU_API_KEY | docker login --username=_ --password-stdin registry.heroku.com'
       }
